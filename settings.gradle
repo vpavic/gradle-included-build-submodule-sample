@@ -1,0 +1,3 @@
+rootProject.name = "gradle-included-build-submodule-sample"
+
+includeBuild("sample-build-conventions")

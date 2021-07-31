@@ -1,0 +1,3 @@
+[submodule "sample-build-conventions"]
+	path = sample-build-conventions
+	url = https://github.com/vpavic/gradle-build-conventions-sample.git
