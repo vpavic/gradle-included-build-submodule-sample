@@ -1,0 +1,22 @@
+= Gradle Included Build Submodule Sample
+
+image:https://github.com/vpavic/gradle-included-build-submodule-sample/actions/workflows/build.yml/badge.svg["Build", link="https://github.com/vpavic/gradle-included-build-submodule-sample/actions/workflows/build.yml"]
+
+This repository contains a simple Gradle project that demonstrates using a https://github.com/vpavic/gradle-build-conventions-sample[build conventions plugin] as an included build that's linked using https://git-scm.com/book/en/v2/Git-Tools-Submodules[Git submodules].
+Such approach can be useful in situations when you can't publish your Gradle plugin.
+
+In order to initialize and fetch the submodule, the repository should be cloned with the `--recurse-submodules` switch:
+
+[source,bash]
+----
+$ git clone --recurse-submodules https://github.com/vpavic/gradle-included-build-submodule-sample.git
+----
+
+In case you already cloned the repository without the `--recurse-submodules` switch, submodule can be initialized and fetched using:
+
+[source,bash]
+----
+$ git submodule update --init --recursive
+----
+
+To learn more about Git submodules, check out the already linked https://git-scm.com/book/en/v2/Git-Tools-Submodules[chapter 7.11 of Pro Git book].
